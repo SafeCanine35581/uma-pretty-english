@@ -1,5 +1,6 @@
 # uma-pretty-english
 the website for the umamusume fandub channel, umamusume: pretty english
+they are british so they drink tea, eat beans on toast, and have questionable dental hygiene
 
 [Join the Discord!](https://discord.gg/sngf4BWSu7)\
 [YouTube Channel](https://www.youtube.com/@UmamusumePrettyEnglish)
