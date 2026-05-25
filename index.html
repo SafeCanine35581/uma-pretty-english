@@ -27,28 +27,31 @@
             <!-- The Navbar -->
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <a class="navbar-brand text-light" href="#">Umamusume: <em>Pretty English</em></a>
+                    <a class="navbar-brand text-light" href="#" >Umamusume: <em>Pretty English</em></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0 ms-auto text-light">
-                        <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#">Join</a>
-                        </li>
-                    </ul>
+                    <div class="uma_navbar ms-auto">
+                        <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                            <li class="nav-item item_border selected_item uma_item">
+                                <a class="nav-link text-light active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item item_border uma_item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item uma_item">
+                                <a class="nav-link" href="#">Join</a>
+                            </li>
+                        </ul>
+                    </div>
                     </div>
                 </div>
             </nav>
-                <div class="d-flex flex-row align-items-center justify-content-center container-fluid">
-                    <div class="container-fluid d-flex flex-row justify-content-around flex-wrap">
-                        <div class="container menu_card">
+                <div class="d-flex flex-column align-items-center justify-content-center container-fluid">
+                    <h2 class="text-white heading rounded">Umamusume: Pretty English</h2>
+                    <div class="container-fluid d-flex flex-row justify-content-evenly flex-wrap">
+                        <div class="container menu_card" onclick="playMambo()">
                             <img src="/img/matikanetannhauser.webp" class="img-fluid rounded" alt="Matikanetannhauser">
                             <a href="#" class="link_button">Join Umamusume: Pretty English </a>
                         </div>
@@ -59,12 +62,8 @@
                     </div>
             </div>
         </div>
-        <div class="container">
-            <div class="text-center">
-                <a onclick="playMambo()">
-                    <img src="/img/matikanetannhauser.webp" class="rounded img-fluid img_click" alt="Mambo">
-                </a>
-            </div>
+        <div class="container p-2">
+            <h2 class="heading rounded">What is Umamusume: Pretty English?</h2>
             <div class="container-fluid">
                 <p>the umas drink tea and eat beans on toast and have questionable dental hygiene</p>
                 <p>i don't know why i made this i didn't even create the project but this is actually about an english fan-dub of umamusume: pretty derby, which is originally created by cygames.</p>

@@ -17,6 +17,54 @@ main {
     flex: 1; 
 }
 
+/* Things for the Navbar */
+.uma_navbar {
+    background-color: white;
+    border-radius: 24px 24px 24px 24px;
+    border: 2px #625d7d solid;
+    overflow: hidden;
+}
+
+/* the button items in the navbar */
+.uma_item {
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.navbar-toggler {
+    background-color: #77c90b;
+    border: 2px #416e05 solid;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.navbar-toggler-icon {
+    filter: invert(1) brightness(10);
+}
+
+
+.uma_item:hover {
+    background-color: #77c90b;
+}
+
+.uma_item:hover a {
+    color: white;
+}
+
+.item_border {
+    border-right: 2px #625d7d solid;
+}
+
+/* the selected item in the navbar */
+.selected_item {
+    background-color: #77c90b;
+}
+
+/* The background image for the menu*/
 #menu_container {
     background-attachment: fixed;
     background-position: center;
@@ -26,6 +74,7 @@ main {
     height: 48rem;
 }
 
+/* the menu card buttons */
 .menu_card {
     background-color: white;
     width: 28rem;
@@ -36,25 +85,53 @@ main {
     align-items: center;
     justify-content: center;
     margin: 1rem;
-    border: 4px grey solid;
-    box-shadow: 0px 10px grey;
+    border: 4px #625d7d solid;
+    box-shadow: 0px 10px #625d7d;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
 
 .menu_card:hover {
-    border: 4px grey solid;
-    box-shadow: 0px 18px grey;
+    border: 4px #625d7d solid;
+    box-shadow: 0px 18px #625d7d;
     transform: translateY(-8px);
 }
 
+/* the text in the menu card that links */
 .link_button {
     text-decoration: none;
-    color: black;
+    color: #625d7d;
     font-size: 1.5rem;
 }
 
 .link_button::after {
     content: "▶";
     margin-left: 5px;
+}
+
+.heading {
+    background-color: #77c90b;
+    color: white;
+    padding: 0.5rem;
+}
+
+@media (max-width: 990px){
+    .uma_item {
+        width: 100%;
+    }
+
+    .item_border {
+        border-bottom: 2px #625d7d solid;
+        border-right: none;
+    }
+
+    .navbar-collapse {
+        margin-top: 1rem;
+
+    }
+
+    #menu_container {
+        height: 100%;
+    }
+
 }
