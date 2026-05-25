@@ -17,3 +17,27 @@ main {
     flex: 1; 
 }
 
+#menu_container {
+    background-image: url("../img/bg/bg_day.webp");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu_card {
+    width: 20rem;
+    height: 40rem;
+
+}
+
+.link_button {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.link_button::after {
+    content: "▶";
+    margin-left: 5px;
+}
