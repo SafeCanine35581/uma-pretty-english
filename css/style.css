@@ -78,7 +78,6 @@ main {
 .menu_card {
     background-color: white;
     width: 28rem;
-    height: 32rem;
     border-radius: 24px;
     display: flex;
     flex-direction: column;
@@ -89,6 +88,7 @@ main {
     box-shadow: 0px 10px #625d7d;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    padding: 1rem;
 }
 
 .menu_card:hover {
@@ -113,6 +113,22 @@ main {
     background-color: #77c90b;
     color: white;
     padding: 0.5rem;
+}
+
+.paragraph {
+    font-size: 14pt;
+}
+
+.uma_button{
+    background-color: #77c90b;
+    border: 4px #416e05 solid;
+    transition: all 0.3s ease-in-out;
+    padding: 0.5rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    display: inline-block;
+
 }
 
 @media (max-width: 990px){

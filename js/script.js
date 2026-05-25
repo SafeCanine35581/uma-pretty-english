@@ -1,4 +1,5 @@
 var Mambo = new Audio('assets/mambo.mp3');
+var Tachyon = new Audio('assets/sonnakimini.mp3');
 
 function setBackground() {
     const background = document.getElementById('menu_container');
@@ -26,4 +27,8 @@ setInterval(setBackground, 60000);
 
 function playMambo() {
     Mambo.play();
+}
+
+function playTachyon() {
+    Tachyon.play();
 }
