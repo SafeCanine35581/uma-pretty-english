@@ -18,11 +18,11 @@ main {
 }
 
 #menu_container {
-    background-image: url("../img/bg/bg_day.webp");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: background-image 0.5s ease-in-out;
 }
 
 .menu_card {
