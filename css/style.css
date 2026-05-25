@@ -184,7 +184,7 @@ hr {
 }
 
 #helios:hover {
-    transform: translateY(-4px);
+    transform: translateY(-5px);
 }
 
 /* Media Queries for responsiveness */
