@@ -119,6 +119,7 @@ main {
     font-size: 14pt;
 }
 
+/* The buttons that link to other parts of the website as well as social links */
 .uma_button{
     background-color: #77c90b;
     border: 2px #416e05 solid;
@@ -138,6 +139,43 @@ main {
     transform: translateY(-3px);
 }
 
+/* The footer */
+.footer {
+    background-color: #77c90b;
+    color: white;
+    padding: 1rem;
+}
+
+/* the container holding all the content in the footer */
+.footer_content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* each section in the footer (there are two sections */
+.footer_section{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+}
+
+.footer_link {
+    text-decoration: none;
+    color: white;
+}
+
+hr {
+    border: 2px solid white;
+}
+
+.inline_link {
+    color:white;
+}
+
+/* Media Queries for responsiveness */
 @media (max-width: 990px){
     .uma_item {
         width: 100%;
