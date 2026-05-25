@@ -17,3 +17,194 @@ main {
     flex: 1; 
 }
 
+/* Things for the Navbar */
+.uma_navbar {
+    background-color: white;
+    border-radius: 24px 24px 24px 24px;
+    border: 2px #625d7d solid;
+    overflow: hidden;
+}
+
+/* the button items in the navbar */
+.uma_item {
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.navbar-toggler {
+    background-color: #77c90b;
+    border: 2px #416e05 solid;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.navbar-toggler-icon {
+    filter: invert(1) brightness(10);
+}
+
+
+.uma_item:hover {
+    background-color: #77c90b;
+}
+
+.uma_item:hover a {
+    color: white;
+}
+
+.item_border {
+    border-right: 2px #625d7d solid;
+}
+
+/* the selected item in the navbar */
+.selected_item {
+    background-color: #77c90b;
+}
+
+/* The background image for the menu*/
+#menu_container {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-image 0.5s ease-in-out;
+    height: 48rem;
+}
+
+/* the menu card buttons */
+.menu_card {
+    background-color: white;
+    width: 28rem;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    border: 4px #625d7d solid;
+    box-shadow: 0px 10px #625d7d;
+    cursor: not-allowed;
+    transition: all 0.3s ease-in-out;
+    padding: 1rem;
+}
+
+.menu_card:hover {
+    border: 4px #625d7d solid;
+    box-shadow: 0px 18px #625d7d;
+    transform: translateY(-8px);
+}
+
+/* the text in the menu card that links */
+.link_button {
+    text-decoration: none;
+    color: #625d7d;
+    font-size: 1.5rem;
+}
+
+.link_button::after {
+    content: "▶";
+    margin-left: 5px;
+}
+
+.heading {
+    background-color: #77c90b;
+    color: white;
+    padding: 0.5rem;
+}
+
+.paragraph {
+    font-size: 14pt;
+}
+
+/* The buttons that link to other parts of the website as well as social links */
+.uma_button{
+    background-color: #77c90b;
+    border: 2px #416e05 solid;
+    transition: all 0.3s ease-in-out;
+    padding: 0.5rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    display: inline-block;
+    box-shadow: 0px 3px #416e05;
+
+}
+
+.uma_button:hover {
+    border: 2px #416e05 solid;
+    box-shadow: 0px 6px #416e05;
+    transform: translateY(-3px);
+}
+
+/* The footer */
+.footer {
+    background-color: #77c90b;
+    color: white;
+    padding: 1rem;
+}
+
+/* the container holding all the content in the footer */
+.footer_content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* each section in the footer (there are two sections */
+.footer_section{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+}
+
+.footer_link {
+    text-decoration: none;
+    color: white;
+}
+
+hr {
+    border: 2px solid white;
+}
+
+.inline_link {
+    color:white;
+}
+
+#helios {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    width: 8rem;
+    position: relative;
+}
+
+#helios:hover {
+    transform: translateY(-5px);
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 990px){
+    .uma_item {
+        width: 100%;
+    }
+
+    .item_border {
+        border-bottom: 2px #625d7d solid;
+        border-right: none;
+    }
+
+    .navbar-collapse {
+        margin-top: 1rem;
+
+    }
+
+    #menu_container {
+        height: 100%;
+    }
+
+}

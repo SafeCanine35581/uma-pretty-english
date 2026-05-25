@@ -6,3 +6,5 @@ they are british so they drink tea, eat beans on toast, and have questionable de
 [YouTube Channel](https://www.youtube.com/@UmamusumePrettyEnglish)
 
 Umamusume: Pretty English is a fan-made dub of Umamusume in English. Umamusume: Pretty Derby is owned and created by Cygames.
+
+The website UI is inspired by the game UI of Umamusume: Pretty Derby.
