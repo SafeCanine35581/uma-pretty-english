@@ -175,6 +175,16 @@ hr {
     color:white;
 }
 
+#helios {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    width: 8rem;
+}
+
+#helios:hover {
+    transform: translateY(-4px);
+}
+
 /* Media Queries for responsiveness */
 @media (max-width: 990px){
     .uma_item {

@@ -1,5 +1,6 @@
 var Mambo = new Audio('assets/mambo.mp3');
 var Tachyon = new Audio('assets/sonnakimini.mp3');
+var Weii = new Audio('assets/weiii-daitaku-helios.mp3');
 
 function setBackground() {
     const background = document.getElementById('menu_container');
@@ -31,4 +32,15 @@ function playMambo() {
 
 function playTachyon() {
     Tachyon.play();
+}
+
+function playWeii() {
+    const helios = document.getElementById('helios');
+    const regularHelios = "img/helios.webp"
+    const weiiHelios = "img/weii_helios.webp"
+    Weii.play();
+    helios.src = weiiHelios;
+    setTimeout(() => {
+        helios.src = regularHelios;
+    }, 1000);
 }
