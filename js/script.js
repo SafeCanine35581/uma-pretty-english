@@ -44,3 +44,9 @@ function playWeii() {
         helios.src = regularHelios;
     }, 1000);
 }
+
+function dailyVoiceActor() {
+    const voiceActors = [
+        {name: "Rin Banapple", character: "Trainer", image: '../img/umas/trainer_placeholder.webp'},
+    ];
+}
