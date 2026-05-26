@@ -70,13 +70,24 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
     transition: background-image 0.5s ease-in-out;
 }
 
 .card_container {
+    margin: auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
+}
+
+.card_box {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -125,6 +136,9 @@ main {
     font-size: 14pt;
 }
 
+.video_container {
+    height: 530px;
+}
 /* The buttons that link to other parts of the website as well as social links */
 .uma_button{
     background-color: #77c90b;
@@ -213,4 +227,10 @@ hr {
         height: 100%;
     }
 
+}
+
+@media (max-width: 1200px){
+    #menu_container {
+        height: 100%;
+    }
 }
