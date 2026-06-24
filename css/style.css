@@ -207,6 +207,8 @@ hr {
     transform: translateY(-5px);
 }
 
+
+
 /* Media Queries for responsiveness */
 @media (max-width: 990px){
     .uma_item {
