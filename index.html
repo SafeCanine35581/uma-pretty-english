@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,138 +26,80 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- redo -->
-    <div class="wrapper">
-        <!-- This part contains the main card buttons and also the cool background thing-->
-        <div class="container-fluid" id="menu_container">
-            <!-- The Navbar -->
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="navbar-brand text-light" href="#" ><img src="/img/logo.svg" alt="Umamusume Pretty English Logo" width="240"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="uma_navbar ms-auto">
-                        <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
-                            <li class="nav-item item_border selected_item uma_item">
-                                <a class="nav-link text-light active" aria-current="page" href="#"><i class="fa-solid fa-house"></i> Home</a>
-                            </li>
-                            <li class="nav-item item_border uma_item">
-                                <a class="nav-link" href="about.html"><i class="fa-solid fa-circle-info"></i> About</a>
-                            </li>
-                            <li class="nav-item uma_item">
-                                <a class="nav-link" href="#"><i class="fa-solid fa-plus"></i>Join</a>
-                            </li>
-                        </ul>
-                    </div>
-                    </div>
-                </div>
-            </nav>
-                <div class="d-flex flex-column container align-items-center justify-content-center card_container">
-                    <h1 class="text-white heading rounded">Umamusume: Pretty English</h1>
-                    <div class="container-fluid card_box">
-                        <div class="container menu_card" onclick="playMambo()" title="See how to join Umamusume: Pretty English">
-                            <img src="/img/matikanetannhauser.webp" class="img-fluid rounded" alt="Matikanetannhauser from Umamusume Pretty Derby">
-                            <a href="#" class="link_button">Join Umamusume: Pretty English </a>
-                        </div>
-                        <a href="/about.html" title="About Umamusume: Pretty English">
-                            <div class="container menu_card" title="Learn more about the Project">
-                                <img src="/img/tachyon.webp" class="img-fluid rounded" alt="Agnes Tachyon from Umamusume Pretty Derby">
-                                <a href="/about.html" class="link_button">About Umamusume: Pretty English </a>
-                            </div>
+    <nav class="navbar shadow navbar-expand-lg rounded m-4" style="background-color: #6f42c1;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/img/logo.svg" alt="Umamusume: Pretty English Logo" width="124">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-circle-info"></i> About</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-user-plus"></i> Join</a>
+                    </li>
+                    <div class="vr"></div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-circle-half-stroke"></i> Appearance
                         </a>
-                    </div>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item active" href="#"><i class="fa-solid fa-moon"></i> Dark</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-sun"></i> Light</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="container p-2">
-            <div class="alert alert-warning paragraph" role="alert">
-                <i class="fa-solid fa-triangle-exclamation"></i></i> A lot of content on this website is still being worked on, so expect some things to be missing or not working!
-            </div>
-            <h2 class="heading rounded">Random Voice Actor of the Day</h2>
-            <div class="alert alert-warning paragraph" role="alert">
-                <i class="fa-solid fa-triangle-exclamation"></i></i> This is also coming soon.
-            </div>
-            <h2 class="heading rounded">Latest Content</h2>
-            <div class="container-fluid paragraph p-2 mb-2">
-                <p>The latest content from our YouTube Channel!</p>
-                <div class="d-flex flex-row">
-                    <iframe 
-                        class="container-fluid video_container" 
-                        loading="lazy"
-                        src="https://www.youtube.com/embed?listType=playlist&list=UUm8-8m_HVKUUtrJ4gpRjGFw" 
-                        title="YouTube video player" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" 
-                        allowfullscreen>
-                    </iframe>
-                    <iframe 
-                        class="container-fluid video_container" 
-                        loading="lazy"
-                        src="https://www.youtube.com/embed?listType=playlist&list=UUm8-8m_HVKUUtrJ4gpRjGFw&index=2" 
-                        title="YouTube video player" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" 
-                        allowfullscreen>
-                    </iframe>
+     </nav>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col bg-body-tertiary p-4 rounded m-2">
+                    <h1>Welcome to Umamusume: Pretty English</h1>
+                    <p>A community made fandub of the game/anime franchise, Umamusume: Pretty Derby in English. Watch our YouTube channel to view videos where we dub over scenes from the game and anime! Join our Discord server to help contribute to this project!</p>
+                    <button type="button" class="btn btn-primary"><i class="fa-solid fa-circle-info"></i> Learn More</button>
                 </div>
-                <div class="mt-2">
-                    <a href="https://www.youtube.com/@UmamusumePrettyEnglish" class="uma_button mb-2" target="_blank" rel="noopener noreferrer" title="Watch our YouTube Channel"><i class="fa-brands fa-youtube"></i> Watch more on YouTube!</a><br>
-                </div>
+                <div class="col bg-body-tertiary p-4 rounded m-2">
+                    <img src="/img/banner.png" alt="Umamusume: Pretty English Banner" class="img-fluid rounded">
+                </div>  
             </div>
-            <h2 class="heading rounded">What is Umamusume: Pretty English?</h2>
-            <div class="container-fluid paragraph p-2 mb-2">
-                <p><em>Umamusume: Pretty English</em> is a fan-made English dub of <em>Umamusume: Pretty Derby</em>, created by <em>Cygames</em>. We voice over skits, game content and so much more and post content on our YouTube channel! You can also join our Discord server to chat with us and other Umamusume fans.<br>
-                    More content will be added in the future, so stay tuned for more!
-                </p>
-                <div>
-                    <a href="/about.html" class="uma_button mb-2" title="Learn more about the Project"><i class="fa-solid fa-circle-info"></i> Learn more about the Project</a><br>
-                    <a href="https://www.youtube.com/@UmamusumePrettyEnglish" class="uma_button mb-2" target="_blank" rel="noopener noreferrer" title="Watch our YouTube Channel"><i class="fa-brands fa-youtube"></i> Watch us on YouTube!</a><br>
-                    <a href="https://discord.gg/vS7VHFupSj" class="uma_button mb-2" target="_blank" rel="noopener noreferrer" title="Join our Discord Server"><i class="fa-brands fa-discord"></i> Join us on Discord!</a>
+            <div class="row">
+                <div class="col bg-body-tertiary p-4 rounded m-2">
+                    <h1>Latest Content</h1>
+                    <p>Check out the latest videos from our YouTube Channel!</p>
+                    <div>
+                        <iframe 
+                            class="container-fluid video_container" 
+                            loading="lazy"
+                            src="https://www.youtube.com/embed?listType=playlist&list=UUm8-8m_HVKUUtrJ4gpRjGFw" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                        <iframe 
+                            class="container-fluid video_container" 
+                            loading="lazy"
+                            src="https://www.youtube.com/embed?listType=playlist&list=UUm8-8m_HVKUUtrJ4gpRjGFw&index=2" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
                 </div>
-            </div>
-            <h2 class="heading rounded">How to Join?</h2>
-            <div class="container-fluid paragraph p-2">
-                <div class="alert alert-warning" role="alert">
-                    <i class="fa-solid fa-triangle-exclamation"></i> This information page on the website is still being worked on. You can still find out how to join by asking in our Discord server!
-                </div>
-                <p>Do you want to voice your favorite Uma? Do you want to help out with editing, translating, designing, or anything else? Join the Discord server and ask or audition for a role! You can also view more information about joining on our website.
-                <div>
-                    <a href="#" class="uma_button" title="View More Information"><i class="fa-solid fa-circle-info"></i> More Information</a>
-                </div>   
             </div>
         </div>
-        <footer class="footer container-fluid">
-            <div class="container">
-                <hr>
-                <div class="footer-content d-flex flex-row justify-content-between flex-wrap">
-                    <div class="footer_section p-2">
-                        <h2>Umamusume: Pretty English</h2>
-                        <a href="/" class="footer_link"><i class="fa-solid fa-house"></i> Home</a>
-                        <a href="about.html" class="footer_link"><i class="fa-solid fa-circle-info"></i> About</a>
-                        <a href="#" class="footer_link"><i class="fa-solid fa-plus"></i> Join</a>
-                        <a href="/privacy.html" class="footer_link"><i class="fa-solid fa-lock"></i> Privacy Policy</a>
-                        <h3>Social Links</h3>
-                        <a href="https://www.youtube.com/@UmamusumePrettyEnglish" class="footer_link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i> YouTube</a><br>
-                        <a href="https://www.tiktok.com/@umamusume.pretty" class="footer_link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok"></i> TikTok</a><br>
-                        <a href="https://discord.gg/vS7VHFupSj" class="footer_link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-discord"></i> Discord</a>
-                        <a href="https://github.com/SafeCanine35581/uma-pretty-english" class="footer_link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
-                        <a href="https://www.tapatv.com" class="footer_link" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-globe"></i> tapatv.com</a>
-                    </div>
-                    <div class="footer_section p-2">
-                        <h4>Important Information and Credits</h4>
-                        <p class="paragraph">Umamusume: Pretty English is a fan-dub of content from Umamusume: Pretty Derby.<br>
-                            Umamusume: Pretty Derby is created and owned by <a href="https://www.cygames.co.jp/en/" target="_blank" rel="noopener noreferrer" class="inline_link">Cygames, Inc.<i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
-                        <p>Website created by <a href="https://github.com/SafeCanine35581" target="_blank" rel="noopener noreferrer" class="inline_link">SaferCaneNein</a> and hosted on <a href="https://pages.cloudflare.com/" target="_blank" rel="noopener noreferrer" class="inline_link">Cloudflare Pages<i class="fa-solid fa-arrow-up-right-from-square"></i></a>.</p>
-                        <p>Background images by <a href="https://umamusu.wiki/Main_Page" target="_blank" rel="noopener noreferrer" class="inline_link">Umamusume: Pretty Wiki<i class="fa-solid fa-arrow-up-right-from-square"></i></a>.</p>
-                        <p>Contact us at <a href="mailto:support@tapatv.com" class="inline_link">support@tapatv.com</a>.</p>
-                    </div>
-                </div>
-            </div>
-            <img src="img/helios.webp" id="helios" alt="Daitaku Helios" onclick="playWeii()" title="Daitaku Helios">
-        </footer>
     </div>
     <!-- JS -->
     <script src="js/script.js"></script>
